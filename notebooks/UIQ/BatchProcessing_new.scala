@@ -31,6 +31,7 @@ import com.microsoft.azure.cosmosdb.spark.streaming.CosmosDBSinkProvider
 // The Avro records get converted to Spark types, filtered, and
 // then written back out as Avro records
 val df = spark.read.avro("dbfs:/mnt/jll_cap/2018/10/16/*.avro")
+val df2 = df
 
 var j = 
   df
